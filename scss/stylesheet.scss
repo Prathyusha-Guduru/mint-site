@@ -36,13 +36,40 @@ main {
     border-radius: 8px;
 }
 
+// .btn-contact-wrapper {
+//     background-color: lightcoral;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+// }
+
 .btn-contact {
     background-color: #000;
+    height: 50px;
     color: #fff;
     min-width: 90%;
     margin: 5px 0;
     border-radius: 8px;
     padding: 8px 0;
+    position: relative;
+    z-index: 3;
+    transition-duration: 0.5s;
+}
+
+.btn-contact:hover {
+    transform: translate(+0.23rem, -0.23rem);
+}
+
+.btn-contact-after {
+    background-color: transparent;
+    width: 90%;
+    height: 48px;
+    border-radius: 8px;
+    position: relative;
+    bottom: 48px;
+    right: 5px;
+    border: 1px solid #000;
+    z-index: 1;
 }
 
 .btn-contact-icon {

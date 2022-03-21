@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("/img/mint-pg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-family: Outfit, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.steps-col {
+    // text-align: center;
+    padding: 20px;
+    h4,
+    h2 {
+        color: #fff;
+        margin: 20px 0;
+    }
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 8px;
+}
+
+.btn-contact {
+    background-color: #000;
+    color: #fff;
+    min-width: 90%;
+    margin: 5px 0;
+    border-radius: 8px;
+    padding: 8px 0;
+}
+
+.btn-contact-icon {
+    margin-right: 5px;
+}
+
+.amount-field {
+    // background-color: lightcoral;
+}
+.amount-input {
+    border: #000 1px solid;
+    border-radius: 8px;
+    padding: 8px 2px;
+    width: 70%;
+}
+
+.sym-btn {
+    padding: 8px 10px;
+    margin: 0 3px;
+    border-radius: 8px;
+}
+
+.pink-btn {
+    padding: 8px 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    position: relative;
+    z-index: 3;
+    transition-duration: 0.5s;
+}
+
+.btn-after {
+    background-color: lightcoral;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #fff;
+    position: relative;
+    bottom: 45px;
+    right: 5px;
+    z-index: 1;
+}
+
+.pink-btn:hover {
+    transform: translate(+0.23rem, -0.23rem);
+    cursor: pointer;
+}

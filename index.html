@@ -2,107 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Fishman's Laboratory | Mint Site</title>
 
-    <title>Fishman's Laboratory Mint Site</title>
+    <meta name="description"
+        content="An NFT collection of 7000 Fish trying to escape Dr.Fishman’s evil plans, heading towards the Opensea! " />
+    <meta name="keywords" content="NFT fishman's lab laboratory fish" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="google-site-verification" content="R-c4AKOZMi7Wzo_6NdBndv20v0mBgB1VDKJ3W_3uoOc" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://twitter.com/FishmansLabs" />
+    <meta name="twitter:title" content="Fishman's Laboratory" />
+    <meta name="twitter:description"
+        content="An NFT collection of 7000 Fish trying to escape Dr.Fishman’s evil plans, heading towards the Opensea!" />
+    <meta name="twitter:image" content="https://fishmanslaboratory.io/img/fml-meta-img.png">
+
+    <!-- Outfit google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap Links -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- FOnt awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"
+        integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 
     <!-- styles -->
-
-    <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"
         rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="styles/media.css">
+    <link rel="stylesheet" href="css/stylesheet.min.css">
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
-    <style>
-        .inptStyl {
-            margin-left: 280px;
-        }
 
-        @media screen and (max-width: 586px) {
-            .inptStyl {
-                margin-left: -12px;
-            }
-        }
-    </style>
 </head>
 
-<body class="body">
-    <section class="first-screen">
-
-        <header class="header">
-            <div class="container-info">
-                <div class="container-header">
-                    <a href="#" class="container-logo">
-                        <!--<div class="logo">
-                            <img src="" alt="logo" style="width:10%;" />
-                        </div>-->
-                    </a>
-                    <div class="header-contacts">
-                        <div class="container-btn-contacts">
-                            <div class="btn-wrap">
-                                <button type="button" class="btn-contact" onclick="addNetworkETH('web3');">
-                                    <span id="buttonConnectContent">Connect</span>
-                                </button>
-                                <div class="connect-btn-after"></div>
-                            </div>
-
-                        </div>
 
 
+
+<body>
+    <main class="d-flex justify-content-center align-items-center">
+        <div class="steps-col col-lg-3 col-md-8 col-sm-9">
+
+            <h2>Fishman’s Laboratories mint page.</h2>
+            <div class="step step1">
+                <h4>Step 1: Connect wallet </h4>
+
+                <div class="white-box connect-btn-box d-flex flex-column align-items-center justify-content-center">
+                    <button type="button" class="btn-contact" onclick="addNetworkETH('web3');">
+                        <img src="/img/metamask-icon.svg" alt="" class="btn-contact-icon">
+                        <span id="buttonConnectContent">Metamask</span>
+                    </button>
+                    <button type="button" class="btn-contact" onclick="addNetworkETH('web3');">
+                        <img src="/img/fortmatic.svg" alt="" class="btn-contact-icon">
+                        <span id="buttonConnectContent">Fortmatic</span>
+                    </button>
+                    <button type="button" class="btn-contact" onclick="addNetworkETH('web3');">
+                        <img src="/img/wallet.svg" alt="" class="btn-contact-icon">
+                        <span id="buttonConnectContent">Connect Wallet</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="step step2">
+                <h4>Step 2: Select quantity</h4>
+                <div class="white-box">
+                    <div class="amount-field d-flex justify-content-evenly align-items-center">
+                        <input type="number" id="depositAmount" class="amount-input" value="5" min="0" max="2" />
+
+                        <!-- <button class="amount-field-button" id="maxAmountButton">Max</button> -->
+                        <button class="sym-btn plus-btn"><i class="fa-solid fa-plus"></i></button>
+                        <button class="sym-btn minus-btn"><i class="fa-solid fa-minus"></i></button>
                     </div>
                 </div>
             </div>
-        </header>
 
-
-
-        <!-- first section -->
-
-        <section class="section-info">
-            <div class="calculate-block-container">
-                <div class="container-info">
-                    <div class="header-section">
-                        <h2 class="title-header" id="investmentSectionTitle">
-                            Token Mint
-                        </h2>
-
-                    </div>
-
-                    <div class="container-calculate-info">
-                        <div class="container-counter">
-
-                            <div class="container-counter-amount inptStyl">
-                                <div class="deposit-block">
-                                    <h3 class="title-deposit amount-title">
-                                        Mint Amount:
-                                    </h3>
-                                    <div class="amount-field">
-                                        <input type="number" id="depositAmount" class="amount-input" value="5"
-                                            min="0" />
-                                        <button class="amount-field-button" id="maxAmountButton">Max</button>
-                                    </div>
-                                    <h4 class="title-info">Min: 5 Fishi</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-counter" id="investButtons">
-                            <div class="btn-wrap">
-                                <button type="button" class="pink-btn invest-btn" id="approveButton"
-                                    onclick="MintToken();">Mint</button>
-                                <div class="btn-after"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+            <div class="step step3">
+                <h4>Step 3: Mint your finion!</h4>
+                <button type="button" class="pink-btn invest-btn" id="approveButton"
+                    onclick="MintToken();">Mint</button>
+                <div class="btn-after"></div>
             </div>
-        </section>
-
-
-
-    </section>
+        </div>
+    </main>
 
 
     <!-- scripts -->

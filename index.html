@@ -16,93 +16,59 @@
     <link rel="stylesheet" type="text/css" href="styles/media.css">
     <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
     <style>
-        .inptStyl {
-            margin-left: 280px;
-        }
 
-        @media screen and (max-width: 586px) {
-            .inptStyl {
-                margin-left: -12px;
-            }
-        }
+
     </style>
 </head>
 
-<body class="body">
-    <section class="first-screen">
-
-        <header class="header">
-            <div class="container-info">
-                <div class="container-header">
-                    <a href="#" class="container-logo">
-                        <!--<div class="logo">
-                            <img src="" alt="logo" style="width:10%;" />
-                        </div>-->
-                    </a>
-                    <div class="header-contacts">
-                        <div class="container-btn-contacts">
-                            <div class="btn-wrap">
-                                <button type="button" class="btn-contact" onclick="addNetworkETH('web3');">
-                                    <span id="buttonConnectContent">Connect</span>
-                                </button>
-                                <div class="connect-btn-after"></div>
-                            </div>
-
-                        </div>
 
 
-                    </div>
+
+
+
+<body>
+    <div class="mint-col">
+        <h2>Fishman’s Laboratories mint page.</h2>
+
+        <div class="step-1">
+            <h4>Step 1: Connect wallet </h4>
+            <div class="connect-btns">
+                <button type="button" class="btn-contact" onclick="addNetworkETH('web3');">
+                    <span id="buttonConnectContent">Connect</span>
+                </button>
+                <button type="button" class="btn-contact" onclick="addNetworkETH('web3');">
+                    <span id="buttonConnectContent">Connect</span>
+                </button>
+
+                <button type="button" class="btn-contact" onclick="addNetworkETH('web3');">
+                    <span id="buttonConnectContent">Connect</span>
+                </button>
+            </div>
+        </div>3
+
+
+        <div class="step-2">
+            <h4>Step 2: Select quantity</h4>
+            <div class="quantity-btn-wrap">
+                <div class="amount-field">
+                    <input type="number" id="depositAmount" class="amount-input" value="5" min="0" />
+                    <button class="amount-field-button" id="maxAmountButton">Max</button>
                 </div>
             </div>
-        </header>
+        </div>
 
-
-
-        <!-- first section -->
-
-        <section class="section-info">
-            <div class="calculate-block-container">
-                <div class="container-info">
-                    <div class="header-section">
-                        <h2 class="title-header" id="investmentSectionTitle">
-                            Token Mint
-                        </h2>
-
-                    </div>
-
-                    <div class="container-calculate-info">
-                        <div class="container-counter">
-
-                            <div class="container-counter-amount inptStyl">
-                                <div class="deposit-block">
-                                    <h3 class="title-deposit amount-title">
-                                        Mint Amount:
-                                    </h3>
-                                    <div class="amount-field">
-                                        <input type="number" id="depositAmount" class="amount-input" value="5"
-                                            min="0" />
-                                        <button class="amount-field-button" id="maxAmountButton">Max</button>
-                                    </div>
-                                    <h4 class="title-info">Min: 5 Fishi</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-counter" id="investButtons">
-                            <div class="btn-wrap">
-                                <button type="button" class="pink-btn invest-btn" id="approveButton"
-                                    onclick="MintToken();">Mint</button>
-                                <div class="btn-after"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+        <div class="step-3">
+            <div class="mint-btn-wrap">
+                <button type="button" class="pink-btn invest-btn" id="approveButton"
+                    onclick="MintToken();">Mint</button>
+                <div class="btn-after"></div>
             </div>
-        </section>
+        </div>
+
+    </div>
 
 
 
-    </section>
 
 
     <!-- scripts -->
@@ -110,7 +76,6 @@
     <script src="js/jquery.min.js"></script>
 
     <script src="js/dapp.js"></script>
-
 </body>
 
 </html>

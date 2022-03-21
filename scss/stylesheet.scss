@@ -82,8 +82,8 @@ main {
 .amount-input {
     border: #000 1px solid;
     border-radius: 8px;
-    padding: 8px 2px;
-    width: 70%;
+    padding: 8px 25px;
+    width: 90%;
 }
 
 .sym-btn {
@@ -120,4 +120,21 @@ main {
 .pink-btn:hover {
     transform: translate(+0.23rem, -0.23rem);
     cursor: pointer;
+}
+
+[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightblue;
+    position: relative;
+    border-radius: 2px;
 }
